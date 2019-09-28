@@ -90,6 +90,11 @@
         .button(5px, black, white, 90px, 6px, 16px);
         text-align: center;
 
+        animation-name: flash;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
         @media @phone {
           .button(5px, black, white, 100%, 15px, 16px);
           text-align: center;
@@ -102,6 +107,12 @@
         @media @phone {
           .button(5px, rgb(86, 163, 240), black, 100%, 15px, 16px)
         }
+      }
+
+      @keyframes flash {
+        0% {opacity: 1.0;}
+        50% {opacity: .5;}
+        100% {opacity: 1.0;}
       }
     }
 
