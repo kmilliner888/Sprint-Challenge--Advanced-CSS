@@ -1,3 +1,9 @@
+.background {
+  background-color: whitesmoke;
+}
+.border {
+  border-radius: 5px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -165,7 +171,9 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: whitesmoke;
   width: 100%;
+  padding: 0px 0px 20px 0px;
 }
 .nav-bar h1 {
   font-size: 40px;
@@ -192,6 +200,9 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro img {
+  border-radius: 5px;
 }
 .home .space-images {
   display: flex;
@@ -228,6 +239,23 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  width: 90px;
+  padding: 6px;
+  font-size: 16px;
+  text-align: center;
+}
+.home .walk .walk-text .btn:hover {
+  border-radius: 5px;
+  background-color: #56a3f0;
+  color: black;
+  width: 90px;
+  padding: 6px;
+  font-size: 16px;
 }
 .home .walk .walk-img {
   width: 46%;

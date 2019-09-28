@@ -11,6 +11,10 @@
     p {
       padding:0 15px;
     }
+
+    img {
+      .border();
+    }
   
   }
 
@@ -58,6 +62,12 @@
       }
 
       .btn {
+        .button(5px, black, white, 90px, 6px, 16px);
+        text-align: center;
+      }
+
+      .btn:hover {
+        .button(5px, rgb(86, 163, 240), black, 90px, 6px, 16px);
       }
     }
 

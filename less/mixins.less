@@ -6,3 +6,20 @@
     justify-content: @justify;
     align-items: @align;
 }
+
+.background {
+    background-color: whitesmoke;
+}
+
+.border {
+    border-radius: 5px;
+}
+
+.button(@btnradius, @btnbackground, @btncolor, @btnwidth, @btnpadding, @btnfontsize) {
+    border-radius: @btnradius;
+    background-color: @btnbackground; 
+    color: @btncolor;
+    width: @btnwidth;
+    padding: @btnpadding;
+    font-size: @btnfontsize;
+}
