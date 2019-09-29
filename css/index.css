@@ -181,12 +181,27 @@ p {
 .nav-bar h1 {
   font-size: 40px;
   padding: 15px;
+  animation-name: flash;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 .nav-bar nav a {
   text-decoration: none;
   color: black;
   padding: 10px;
   font-size: 18px;
+}
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 footer {
   color: #22283B;
