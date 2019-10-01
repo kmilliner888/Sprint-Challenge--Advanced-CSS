@@ -33,14 +33,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+Adaptive is half way between responsive and fixed in that it still uses fixed units like pixels for different viewport widths, and often separate files for mobile/tablet/desktop, but it also makes use of media queries/breakpoints. This creates more of a “pop” in differences from one view to another. A responsive website uses units that are more fluid and flexible to the viewport resizing, like percentages. Can still include media queries/breakpoints as well. This creates more of a flow to the changes as they “respond” to the viewport growing/shrinking. 
 
 2. Describe what it means to be mobile first vs desktop first.
+Mobile First is when you build your site based on a mobile or phone viewport/screen size first, then build additional changes in to adapt or respond for tablet and desktop views, like using percentages or media queries. Desktop first is the opposite, where you build the site based on a desktop viewport/screen.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+62.5% of 16px is 10px. Since the default font size for a web page is typically 16px, it can be difficult to calculate the math to convert it into rems. We you put font-size: 62.5% (of 16px), you are basically changing the default font-size for the page to 10px, which is a lot easier to multiply or divide, while still keeping the page responsive (using a percentage).
 
 4. How would you describe preprocessing to someone new to CSS?
+A preprocessor like LESS gives better organization to your CSS and can simplify your styling to reduce repetition. 
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+I really like the Nesting with LESS. That’s super helpful because it matches the HTML structure. I can keep the HTML and LESS file open side by side and make changes to the same sections, in the same order. What gives me the most trouble is probably remembering to put different components or LESS styles in the separate files, and file structure, importing. They don’t really give me trouble, so to speak, but I’m still trying to remember that. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
